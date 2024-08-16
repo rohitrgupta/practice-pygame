@@ -23,6 +23,8 @@ class Game:
 
     def draw(self):
         self.screen.fill("lightblue")
+        pygame.draw.rect(self.screen, (0, 255, 0), (100, 100, 100, 100))
+        pygame.draw.circle(self.screen, (0, 0, 255), center=(300, 100), radius=50)
         pygame.display.update()
 
     def close(self):
