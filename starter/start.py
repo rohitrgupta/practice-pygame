@@ -5,9 +5,11 @@ import sys
 class Game:
     def __init__(self) -> None:
         pygame.init()
-        self.running = True
-        self.screen = pygame.display.set_mode((800, 600))
+        self.score_font = pygame.font.SysFont("comicsans", 40)
+        self.screen = pygame.display.set_mode((400, 400))
+        pygame.display.set_caption("Snake")
         self.clock = pygame.time.Clock()
+        self.running = True
 
     def run(self):
         while self.running:
